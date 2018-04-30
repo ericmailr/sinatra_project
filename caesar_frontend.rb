@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
-require './caesar_cipher'
+require './caesar_cipher' if development?
 
 get '/' do
 	params['message'] ? message = params['message'] : message = ""
