@@ -1,9 +1,16 @@
 <html>
 	<head></head>
 	<body>
-
+	<form>
+		<label>Message to Encrypt</label>
+		<input type='text' label='Message to Encrypt' name='message' />
+		<br />
+		<label>Shift Factor</label>
+		<input type='text' label='Shift Factor' name='shift_factor' />
+		<input type='submit' value='Encipher' />
+	</form>
 		<p>
-			testing
+			<%= code %>
 		</p>
 	</body>
 </html>
